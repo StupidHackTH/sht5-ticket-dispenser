@@ -22,7 +22,7 @@ const main = () =>
         })
         .register(base)
         .register(dispenser)
-        .listen(3000, '0.0.0.0', (error, address) => {
+        .listen(8080, '0.0.0.0', (error, address) => {
             if (error) return console.error(error)
 
             console.log(`Running at ${address}`)

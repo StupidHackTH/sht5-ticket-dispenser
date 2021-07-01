@@ -1,0 +1,6 @@
+.dev
+.vercel
+node_modules
+.DS_Store
+.env.example
+vercel.json
