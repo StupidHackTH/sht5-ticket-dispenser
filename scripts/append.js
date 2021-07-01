@@ -1,9 +1,9 @@
-import { readFileSync, writeFileSync } from 'fs'
-import { resolve } from 'path'
+const { readFileSync, writeFileSync } = require('fs')
+const { resolve } = require('path')
 
 const append = () => {
-    let header = `import dotenv from 'dotenv'
-dotenv.config();`
+    // eslint-disable-next-line quotes
+    let header = `require('dotenv').config();`
 
     // -------------------
     // eslint-disable-next-line no-undef
@@ -15,4 +15,4 @@ dotenv.config();`
     writeFileSync(file, header.trim() + content)
 }
 
-export default append
+module.exports = append

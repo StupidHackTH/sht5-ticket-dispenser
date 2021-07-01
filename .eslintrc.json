@@ -18,5 +18,5 @@
         "@typescript-eslint/explicit-module-boundary-types": ["off"],
         "prefer-const": ["off"]
     },
-    "ignorePatterns": ["builder.js", "register.js", "build/*"]
+    "ignorePatterns": ["scripts/*", "build/*"]
 }

@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
-    "type": "module",
     "scripts": {
         "dev": "nodemon --config nodemon.json",
         "build": "NODE_ENV=production node scripts/builder.js",
