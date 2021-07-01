@@ -1,6 +1,8 @@
 ## sht5 Ticket Dispenser
 Stupid Hackathon 5 Ticket Dispenser.
 
+![Chibi Enterprise](https://user-images.githubusercontent.com/35027979/124172061-90f71a80-dad3-11eb-8217-ac865addbceb.png)
+
 ## Documentation
 - [POST] /dispenser/:dispenser
 
