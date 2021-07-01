@@ -3,10 +3,10 @@
     "builds": [
         {
             "src": "build/index.js",
-            "use": "@now/node"
+            "use": "@now/node-server"
         },
         {
-          "src": "public/*",
+          "src": "public",
           "use": "@now/static"
         }
     ],
