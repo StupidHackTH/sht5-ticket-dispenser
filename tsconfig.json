@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "CommonJS",
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "strict": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "resolveJsonModule": true,
+        "paths": {
+            "@modules/*": ["src/modules/*"],
+            "@services/*": ["src/services/*"],
+            "@assets/*": ["assets/*"]
+        },
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}
