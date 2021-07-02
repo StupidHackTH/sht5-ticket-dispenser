@@ -55,6 +55,9 @@ export const getTicket = async ({
     challenge: string
     key: string
 }) => {
+    if (challenge === 'unassign-challenge')
+        return new Error('Illegal challenge')
+
     let ticketBox = firestore.collection('tickets').doc(challenge)
 
     let dispenser = await ticketBox.get()
@@ -104,6 +107,9 @@ export const reserveTicket = async ({
     challenge: string
     production: boolean
 }) => {
+    if (tickets.length === 0)
+        return new Error('Out of ticket, please try again next challenge.')
+
     try {
         let ticket = randomPick(tickets)
 

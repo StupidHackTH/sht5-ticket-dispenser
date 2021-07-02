@@ -6,7 +6,8 @@ import { projectName, imageName } from '../config'
 const myImage = new docker.Image(projectName, {
 	imageName,
 	build: {
-		context: '../../code'
+		context: '../../code',
+		"extraOptions": ["--network", "host"]
 	}
 })
 
